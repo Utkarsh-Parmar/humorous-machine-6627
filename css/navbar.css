@@ -260,3 +260,130 @@ color: white;
     cursor: pointer;
 }
 
+/* Caraousel div */
+#caraousel_div{
+    height: 480px;
+    width: 100%;
+    border: 0px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#caraousel_child{
+    width: 80%;
+    height: 450px;
+    border: 0px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cat_btn{
+    width: 25%;
+    height: 95%;
+    border: 0px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#caraousel_top{
+    width: 75%;
+    height: 95%;
+    border: 0px solid purple;
+}
+.cat_btns{
+    width:90%;
+    height: 95%;
+    border: 0px solid purple;
+    font-family: sans-serif;
+}
+.cat_btns>h4{
+    cursor: pointer;
+}
+.cat_btns>h4:hover{
+    text-decoration: underline;
+}
+.cat_btns>button{
+   display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: left;
+    white-space: nowrap;
+    background-color: transparent;
+    margin-bottom: 5px;
+    border: transparent;
+    cursor: pointer;
+}
+.cat_btns>button:hover{
+    text-decoration: underline;
+}
+.cat_btns>button>img{
+    margin-left: 5px;
+    
+}
+.cat_btns>button>span{
+    margin-left: 10px;
+    
+}
+.cat_btns>button>{
+    display: flex;
+    justify-content: right;
+}
+#caraousel_top>img{
+    width: 100%;
+}
+#banner{
+    height: 216px;
+    width: 100%;
+    border: 0px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#banneer_img_div{
+    width: 80%;
+    height: 100%;
+    border: 0px solid rgb(108, 36, 60);
+}
+#banneer_img_div>img{
+    width: 100%;
+}
+#second_carausel{
+    height: 450px;
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sec_car{
+    width: 80%;
+    height: 95%;
+    border: 1px solid ;
+}
+
+#discount_div{
+
+    height: 300px;
+    width: 100%;
+    border: 0px solid purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#disc_cont{
+    width: 80%;
+    height: 95%;
+    border: 0px solid blue ;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+#disc_cont>div{
+    border: 0px solid green;
+}
+#disc_cont>div>img{
+    width: 100%;
+    height: 100%;
+}
+
+
