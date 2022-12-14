@@ -1,0 +1,19 @@
+#container_skin>div>img{
+    width: 150px;
+    display: flex;
+    margin: auto;
+  border: 0px solid red;
+  margin-bottom: -10px;
+}
+#container_skin>div{
+    width: 250px;
+   justify-content: center;
+    margin: auto;
+    border: 0px solid red;
+}
+#container_skin{
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ margin-left: 300px;
+
+}
