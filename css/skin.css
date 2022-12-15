@@ -4,16 +4,29 @@
     margin: auto;
   border: 0px solid red;
   margin-bottom: -10px;
+    margin-top: 25px;
 }
 #container_skin>div{
-    width: 250px;
+    width: 100%;
+    height: 350px;
+    text-align: center;
    justify-content: center;
     margin: auto;
-    border: 0px solid red;
+    border: 1px solid gray;
 }
 #container_skin{
  display: grid;
  grid-template-columns: repeat(3,1fr);
- margin-left: 300px;
+ margin-left: 38%;
 
+}
+.Product_Price{
+  color: rgb(168, 57, 6);
+  font-size: 17px;
+}
+
+.Product_Name{
+  border: 0px red solid;
+  height: 30px;
+padding: 0px 20px 0px 20px;
 }
