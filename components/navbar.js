@@ -78,7 +78,7 @@ const footer=()=>{
             <li>FAQ</li>
         </div>
         <div id="div4">
-            <h4>CAREGORIES</h4>
+            <h4>CATEGORIES</h4>
             <li>Makeup</li>
             <li>Skin</li>
             <li>Hair</li>
