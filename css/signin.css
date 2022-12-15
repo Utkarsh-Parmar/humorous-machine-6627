@@ -1,0 +1,135 @@
+#lg-abv{
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid red; */
+    margin-bottom: 10px;
+}
+
+#lg-abv>h1{
+    color: #444;
+    font: 25px Roboto;
+}
+
+#block-content{
+    /* display: flex; */
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.fbk-btn{
+    /* margin: 2px; */
+    width:350px;
+    cursor: pointer;
+}
+
+.ggl-btn{
+    padding-top: 18px;
+    /* margin: 2px; */
+    width:350px;
+    height: 45px;
+    cursor: pointer;
+}
+
+#lg-form{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    column-gap: 20px;
+    margin-bottom: 20px;
+}
+
+#form-lhs{
+    width: 50%;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+form>div:nth-child(5){
+    display: flex;
+    column-gap: 55px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.hd{
+    color: #222;
+    font: 20px Roboto;
+}
+
+#form-lhs>div{
+    width: 90%;
+    margin: auto;
+    
+
+}
+
+#form-lhs>div>div:nth-child(1){
+    margin: 20px 0px;
+    
+
+}
+
+#form-rhs{
+    width:50%;
+    
+    background-color: #fff;
+    border: 1px solid #ddd;
+    
+}
+
+#form-rhs> div{
+    width:90%;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.inp{
+    width: 98%;
+    height: 35px;
+    border: 1px solid #adadad;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.lg-button {
+    border: none;
+    overflow: visible;
+    background: #444;
+    cursor: pointer;
+    height: 35px;
+    line-height: 35px;
+    white-space: nowrap;
+    font-size: 100%;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: relative;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+/* button:hover{
+    background: #6b3e85; 
+    color: #fff;
+}   */
+.clr{
+    font: 14px Roboto;
+    color: #666;
+    font-weight: bolder;
+}
+.clr1{
+    font: 16px Roboto;
+    color: #666;
+    padding: 5px 0px; 
+}
