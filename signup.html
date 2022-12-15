@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Customer Account</title>
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+        crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <div id="navbar">
+    </div>
+    <div class="signup-cntr">
+        <h1>Create New User Acount</h1>
+
+        <div id="form-div">
+            <div>
+                <div>
+                    <h2 >PERSONAL INFORMATION</h2>
+                    <hr>
+                </div>
+                <form id="user_sign_up_form">
+                    <div id="name-div">
+                        <div>
+                            <div><label for="firstname"><span>First Name *</span></label></div>
+                            <div><input class="in" type="text" id="user-first-name" required/></div>
+                        </div>
+                        <div>
+                            <div><label for="lastname"><span>Last Name *</span></label></div>
+                            <div><input class="in" type="text" id="user-last-name" required/></div>
+                        </div>
+                    </div>
+                    <div class="usr-dtl">
+                        <div><label for="email"><span>Email *</span></label></div>
+                        <div><input class="in"  type="email"  id="user-email" required/></div>
+                    </div>
+                    <div class="usr-dtl">
+                        <div><label for="phone"><span>Phone *</span></label></div>
+                        <div><input class="in"  type="number"  id="user-number" maxlength="10" required/></div>
+                        <!-- <div><input class="in" type="text" name="country_code" title="Error Message" pattern="[1-9]{1}[0-9]{9}"></div> -->
+                    </div>
+                    <div class="usr-dtl">
+                        <div><label for="password"><span>Password *</span></label></div>
+                        <div><input class="in"  type="password"  id="user-password" required/></div>
+                    </div>
+                    <div class="usr-dtl">
+                        <div><label for="re_password"><span>Confirm Password *</span></label></div>
+                        <div><input class="in"  type="password"  id="confirm-password" required/></div>
+                    </div>
+                    <div class="usr-dtl">
+                        <button id="sign-up-btn" class="lg-button"> <span>CREATE AN ACCOUNT</span></button>
+                        <!-- <input id=" sign-up-btn" type="submit" value="CREATE AN ACCOUNT" class="lg-button" /> -->
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <div id="footer"></div>                
+
+</body>
+<script type="module" src="./scripts/signin.js"></script>
+</html>

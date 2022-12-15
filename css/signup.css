@@ -1,0 +1,63 @@
+.signup-cntr{
+    width: 50%;
+    margin: auto;
+    height: 700px;
+    text-align: center;
+}
+
+#form-div{
+    padding: 10px;
+    width: 97%;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+}
+
+#form-div>div{
+    width: 95%;
+    margin: auto;
+    /* border: 1px solid yellow; */
+
+}
+
+#name-div{
+    display: flex;
+    text-align: left;
+}
+
+#name-div>div{
+    width: 45%;
+    margin: auto;
+
+}
+.in{
+    width: 98%;
+    height: 35px;
+    border: 1px solid #d4d2d2;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 10px 0px;
+}
+
+.usr-dtl{
+    margin: 10px;
+    text-align: left;
+    padding-left:5px;
+}
+
+.lg-button {
+    border: none;
+    overflow: visible;
+    background: #444;
+    cursor: pointer;
+    height: 35px;
+    line-height: 35px;
+    white-space: nowrap;
+    font-size: 100%;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: relative;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+}
