@@ -108,4 +108,4 @@ const footer=()=>{
     `
 }
 
-export default {navbar,footer}
+export {navbar,footer}
