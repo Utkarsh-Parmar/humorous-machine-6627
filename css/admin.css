@@ -6,12 +6,13 @@ body{
 #main{
     width: 80%;
     margin: auto;
-    height: 500px;
     display: flex;
     align-self: center;
+    justify-content: space-between;
+    
 }
 #main_1{
-    width: 40%;
+    width: 38%;
     padding: 20px;
     text-align: center;
 }
@@ -34,4 +35,36 @@ h1{
     color: antiquewhite;
     text-align: center;
     font-size: 35px;
+}
+#main_2{
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+}
+#main_2>input {
+    width: 90%;
+    height: 35px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 0px;
+
+}
+#main_2>button{
+    width: 25%;
+    height: 45px;
+    font-size: 15px;
+    background-color:black ;
+    border: 0px;
+    border-radius: 3px;
+    color: white;
+
+}
+
+#main_2>button:hover{
+    background-color:rgb(4, 204, 4) ;
+}
+#main_2>input:hover{
+    background-color: rgb(226, 255, 245);
 }
