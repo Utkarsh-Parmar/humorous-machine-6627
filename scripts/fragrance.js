@@ -1,4 +1,4 @@
-let url="https://js211-project.onrender.com/skin"
+let url="https://js211-project.onrender.com/fragrance"
 let product=async()=>{
     let res=await fetch(url)
     res= await res.json()
@@ -22,35 +22,3 @@ let renderDom=(data)=>{
         cont.append(div)
     })
 }
-
-
-
-
-let low=async()=>{
-
-let res=await fetch(`${url}?_sort=price&_order=asc`)
-  data= await res.json()
-renderDom(data)
-console.log(data)
- 
-}
-let high=async()=>{
-
-let res=await fetch(`${url}?_sort=price&_order=desc`)
-  data= await res.json()
-renderDom(data)
-console.log(data)
- 
-}
-
-let sorting=document.getElementById("priceSorting").addEventListener("change",(event)=>{
-
-if(event.target.value=="high"){
-high()
-console.log(event.target.value)
-}else if(event.target.value=="low"){
-low()
-console.log(event.target.value)
-}
-
-})
