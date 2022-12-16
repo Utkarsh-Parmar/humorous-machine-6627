@@ -1,6 +1,8 @@
 const navbar=()=>{
     return`
+    <div id="img_top_nav">
     <img src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg" alt="">
+    </div>
         <div id="middle_div">
             <div id="mid_div_cont">
                 <div id="logo">
@@ -41,7 +43,7 @@ const navbar=()=>{
                 <button>BRANDS <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></button>
             </div>
             <div id="my_cart">
-                <button id="my_cart_btn"><i class="fa-sharp fa-solid fa-bag-shopping"></i> MY CART</button>
+                <button id="my_cart_btn"><i class="fa-sharp fa-solid fa-bag-shopping"></i> MY CART </button><span><p>0.00</p></span>
             </div>
         </div>
     `

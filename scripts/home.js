@@ -23,26 +23,29 @@ let caraouse=()=>{
         img.src=images[i];
         caraousel_div.append(img);
         i++;
-    },2000)
+    },3000)
 }
 caraouse();
 
-const arrows = document.querySelectorAll(".arrow");
-        const container= document.querySelectorAll("#sec_car");
 
-        arrows.forEach((arrow, i) => {
-            const ItemNo = container[i].querySelectorAll("img").length;
-            let clickitem = 0;
-            arrow.addEventListener("click", () => {
-                clickitem++;
-                if(ItemNo - (5 + clickitem) >= 0){
-                    container[i].style.transform = `translateX(${
-                        container[i].computedStyleMap().get("transform")[0].x.value
-                        - 455}px)`;
-                }else{
-                    container[i].style.transform = "translateX(0)";
-                    clickitem = 0;
-                }
-            });
-        });
-
+        let sec_carousel_div=document.getElementById("sec_car");
+let caraouselsec=()=>{
+    let images=["https://i.ibb.co/s60FtKg/Screenshot-2022-12-15-224113.png",
+    "https://i.ibb.co/HV38Sg5/Screenshot-2022-12-15-224145.png",
+    "https://i.ibb.co/N6DLgmk/Screenshot-2022-12-15-224217.png",
+    "https://i.ibb.co/nLWSHLj/Screenshot-2022-12-15-224307.png",
+    "https://i.ibb.co/PFy1fmR/Screenshot-2022-12-15-224342.png"];
+        let img=document.createElement("img");
+        img.src=images[0];
+        sec_carousel_div.append(img);
+        let i=1;
+    setInterval(()=>{
+        if(i===images.length){
+            i=0;
+        }
+        img.src=images[i];
+        sec_carousel_div.append(img);
+        i++;
+    },4000)
+}
+caraouselsec();
