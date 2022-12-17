@@ -21,8 +21,9 @@
 #container_skin{
  display: grid;
  grid-template-columns: repeat(3,1fr);
- width: 83%;
+ width: 78%;
  margin: auto;
+ margin-bottom: 40px;
 
 
 }
@@ -42,4 +43,52 @@ padding: 0px 20px 0px 20px;
   border-radius: 5px;
   color: white;
   background-color: palevioletred;
+}
+#sorting{
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+#btn{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 80px;
+  padding: 10px;
+
+}
+.all_btns{
+  background-color: transparent;
+  border: 1px solid gray;
+}
+.all_btns:hover{
+  background-color: #e20389;
+  color: white;
+}
+#select_Brand{
+  background-color: transparent;
+  padding: 5px;
+  border: 1px solid gray;
+}
+#select_Brand:hover{
+  background-color: #e20389;
+  color: white;
+}
+#sortlh{
+  background-color: transparent;
+  padding: 5px;
+  border: 1px solid gray;
+}
+#sorthl{
+  background-color: transparent;
+  padding: 5px;
+  border: 1px solid gray;
+}
+#sorthl:hover{
+  background-color: #e20389;
+  color: white;
+}
+#sortlh:hover{
+  background-color: #e20389;
+  color: white;
 }

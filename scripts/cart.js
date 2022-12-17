@@ -30,7 +30,7 @@ let displayData=(data)=>{
           let starImage=document.createElement("img")
           starImage.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNi46qN56UzUWRidUVf3g6vXp9pOscW5_mjw&usqp=CAU"
           let price=document.createElement("h5")
-          price.innerText=+el.price
+          price.innerText="Rs "+(+el.price)
           
         let remove=document.createElement("button")
         remove.innerText="Remove"
@@ -64,6 +64,9 @@ price(cartData)
 document.getElementById("totalPrice").onclick=()=>{
   window.location.href="payment.html"
   console.log("hey")
+}
+document.getElementById("indexLink").onclick=()=>{
+  window.location.href="skin.html"
 }
 // window.onload=()=>{
 // price(cartData)
