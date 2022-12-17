@@ -1,3 +1,12 @@
+import{navbar,footer} from "../components/navbar.js"
+
+let navbar_div=document.getElementById("navbar");
+navbar_div.innerHTML=navbar()
+
+let footer_div=document.getElementById("footer");
+footer_div.innerHTML=footer();
+
+
 //add product
 
 document.getElementById("add_pro").addEventListener("click", () => {
@@ -30,6 +39,7 @@ document.getElementById("add_pro").addEventListener("click", () => {
     sub.innerText = "Add Product"
     sub.addEventListener("click", () => {
         addPro()
+
     });
 
 
@@ -95,15 +105,14 @@ document.getElementById("delepro").addEventListener("click", () => {
     sub.innerText = "Delete Product"
     sub.addEventListener("click", () => {
         delePro()
+        
     });
-
-
-
+    id1.value=null
     div1.append(h1, id1, sub)
 });
 
 
-addPro = async () => {
+let addPro = async () => {
     let id1 = document.getElementById("id_pro")
     let obj = {
         id:+ id1.value,
@@ -111,7 +120,7 @@ addPro = async () => {
         image_url: image.value,
         price: +price.value,
     }
-    let url_1 = await fetch(`https://faskuys-j.onrender.com/inventory`, {
+    let url_1 = await fetch(`https://js211-project.onrender.com/hair`, {
         method: "POST",
         body: JSON.stringify(obj),
         headers: {
@@ -123,7 +132,7 @@ addPro = async () => {
     alert("Product Added Successfully")
 }
 
-updPro = async () => {
+let updPro = async () => {
     let id1 =document.getElementById("id_pro").value
     
     let obj = {
@@ -131,7 +140,7 @@ updPro = async () => {
         image_url: image.value,
         price: +price.value,
     }
-    let url_1 = await fetch(`https://faskuys-j.onrender.com/inventory/${id1}`, {
+    let url_1 = await fetch(`https://js211-project.onrender.com/hair/${id1}`, {
         method: "PATCH",
         body: JSON.stringify(obj),
         headers: {
@@ -143,10 +152,10 @@ updPro = async () => {
     alert("Product Updated Successfully")
 }
 
-delePro=async()=>{
+let delePro=async()=>{
     let id1 =document.getElementById("id_pro").value
 
-    let url_1 = await fetch(`https://faskuys-j.onrender.com/inventory/${id1}`, {
+    let url_1 = await fetch(`https://js211-project.onrender.com/hair/${id1}`, {
         method: "DELETE",
         headers: {
             "Content-type": "application/json "
@@ -154,13 +163,14 @@ delePro=async()=>{
     })
     let dat1 = await url_1.json();
 
+
     alert("Product Deleted Successfully")
     
 }
 
 
 
-cretel = (el) => {
+let cretel = (el) => {
     return document.createElement(el)
 }
 
