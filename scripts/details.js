@@ -16,6 +16,7 @@ let product=async(pageNo=1)=>{
 product()
 let renderDom=(data)=>{
     let cont=document.getElementById("container")
+    document.getElementById("loader").style.display="none"
       cont.innerHTML=null
       data.forEach((el)=>{
          
