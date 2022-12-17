@@ -61,6 +61,10 @@ function price(data){
     })
 }
 price(cartData)
+document.getElementById("totalPrice").onclick=()=>{
+  window.location.href="payment.html"
+  console.log("hey")
+}
 // window.onload=()=>{
 // price(cartData)
 // }
