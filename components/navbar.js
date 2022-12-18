@@ -33,7 +33,7 @@ const navbar=()=>{
         </div>
         <div id="nav_btns_Main_div">
             <div id="nav_btns_div">
-                <button>MAKEUP <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></button>
+                <button id="makeup_btn">MAKEUP <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></button>
                 <button id="skin-btn">SKIN <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></button>
                 <button id="hair_btn">HAIR <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></button>
                 <button>PERSONAL CARE <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></button>

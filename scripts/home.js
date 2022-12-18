@@ -6,11 +6,17 @@ navbar_div.innerHTML=navbar()
 let footer_div=document.getElementById("footer");
 footer_div.innerHTML=footer();
 
-//makeup btn link
+
 let makeup_btn=document.getElementById('makeup_btn');
 makeup_btn.onclick=()=>{
     window.location.href="skin.html"
 }
+
+let skin_btn=document.getElementById('logo');
+skin_btn.onclick=()=>{
+    window.location.href="skin.html"
+}
+
 //indexpage btn link
 let index_btn=document.getElementById('logo');
 index_btn.onclick=()=>{
