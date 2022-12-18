@@ -16,6 +16,7 @@ let product=async(pageNo=1)=>{
 product()
 let renderDom=(data)=>{
     let cont=document.getElementById("container_skin")
+    document.getElementById("loader").style.display="none"
     cont.innerHTML=null
     data.forEach((el)=>{
 
@@ -35,7 +36,7 @@ let renderDom=(data)=>{
         let starImage=document.createElement("img")
         starImage.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNi46qN56UzUWRidUVf3g6vXp9pOscW5_mjw&usqp=CAU"
         let price=document.createElement("h5")
-        price.innerText=+el.price
+        price.innerText="Price Rs "+(+el.price)
         price.className="Product_Price"
         let addToCart=document.createElement("button")
         addToCart.className="add_to_cart"
@@ -80,6 +81,7 @@ let showButton=()=>{
   
   for(let i=1;i<6;i++){
     let btns=document.createElement("button")
+    btns.className="all_btns"
     btns.innerText=i
     btns.onclick=()=>{
       product(i)
@@ -101,10 +103,15 @@ showButton()
 
 let renderDom1=(data,brand_Name)=>{
   let cont=document.getElementById("container_skin")
+  document.getElementById("loader").style.display="none"
     cont.innerHTML=null
     data.forEach((el)=>{
         if(el.brand==brand_Name){
         let div=document.createElement("div")
+        div.onclick=()=>{
+          window.location.href="details.html"
+          localStorage.Data_id=el.id
+        }
         let image=document.createElement("img")
         image.src=el.image
         let name=document.createElement("h5")
