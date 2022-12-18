@@ -35,7 +35,9 @@
     text-decoration: underline;
 }
 #footer_main_container>div :hover{
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    font-size: 18px;
+    color: #e20389;
     
 }
 .newsletter-footer{
@@ -190,6 +192,24 @@
     color: white;
     font-weight: bold;
   }
+
+
+#dropdowndon-content-navbar-btn_div{
+    position: relative;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 #searchbox_nav{
     width:50% ;
     border: 0px solid red;
@@ -406,7 +426,7 @@ color: white;
 #categories_div{
     height: 500px;
     width: 100%;
-    border: 1px solid red;
+    border: 0px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -414,7 +434,80 @@ color: white;
 #sec_cat_div{
     width: 80%;
     height: 95%;
-    border: 2px solid yellowgreen;
+    border: 0px solid yellowgreen;
+}
+#sec_cat_nav{
+    height: 20%;
+    width: 100%;
+    border: 0px solid red ;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+#sec_cat_nav_btn{
+    text-align: center;
+    border: 0px solid #666 ;
+}
+#sec_cat_nav_btn:hover{
+    border: 2px solid #DD0285;
+}
+#sec_cat_nav_btn:hover{
+    cursor: pointer;
+}
+#sec_cat_desc:hover{
+    background-color: #DD0285;
+    color: white;
+    
+}
+#sec_cat_nav_btn>img:hover{
+    color: white;
+}
+#sec_cat_nav_btn>img{
+    width: 40%;
+    max-height: 40px;
+}
+#sec_cat_product{
+    height: 82%;
+    width: 100%;
+    border: 0px solid ;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3px;
+}
+#det_product{
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+   
+}
+#sec_cat_img{
+height: 60%;
+border: 0px solid green;
+}
+#sec_cat_img>img{
+    width: 100%;
+    height: 100%;
+}
+#sec_cat_desciption{
+    height: 40%;
+    border: 0px solid blue;
+    text-align: center;
+}
+#desc_p{
+    font-weight: 500;
+    color: #666;
+}
+#heart{
+    border: transparent;
+    height: 20px;
+    background-color:white;
+    color:#DD0285;
+}
+#heart:hover{
+    cursor: pointer;
+}
+.fa-heart:hover{
+    background-color: #f9f9f9;
+    color:#DD0285;
 }
 #p_banner{
     height: 200px;
@@ -423,6 +516,7 @@ color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 18px;
 }
 #p_banner_div{
     width: 80%;
@@ -553,7 +647,7 @@ height: 100%;
     height: 100%;
 }
 #about_us{
-    height: 430px;
+    height: auto;
     width: 100%;
     border: 0px solid green;
     display: flex;
@@ -570,9 +664,9 @@ height: 100%;
     color: #666;
     line-height: 1.66;
     font-family: sans-serif;
-    margin-top: -10px;
+    
 }
-.about_us_description{
+.about_us_desc{
     color: #666;
     font-family: sans-serif;
 }
@@ -581,4 +675,16 @@ height: 100%;
 #sec_car>img{
     width: 100%;
     height: 100%;
+}
+.read-more-btn{
+    color:teal;
+}
+.read-more-btn:hover{
+    cursor: pointer;
+}
+.read-more-text{
+    display: none;
+}
+.read-more-text--show{
+    display: inline;
 }

@@ -16,6 +16,7 @@ let product=async(pageNo=1)=>{
 product()
 let renderDom=(data)=>{
     let cont=document.getElementById("container")
+    document.getElementById("loader").style.display="none"
       cont.innerHTML=null
       data.forEach((el)=>{
          
@@ -66,3 +67,5 @@ let renderDom=(data)=>{
   }
 
 delete localStorage.Data_id;
+let user_name=document.getElementById("btn3")
+user_name.innerText=localStorage.user_Name
