@@ -11,19 +11,34 @@
 src="https://kit.fontawesome.com/24c494a6b6.js"
     crossorigin="anonymous"
 ></script>
-
+<link rel="stylesheet" href="./css/skin.css">
 <link rel="stylesheet" href="./css/navbar.css">
 <body>
     <div id="navbar"></div>
-    <div>
-        <select name="" id="priceSorting">
-       <option value="">sorting according to price</option>
-        <option value="low">low to high</option>
-        <option value="high">high to low</option>
-    </select>
+    <div >
+        <div id="sorting">
+            <button id="sortlh">Sort low to high</button>
+            <button id="sorthl">Sort high to low</button>
+             <select name="" id="select_Brand">
+                 <option value="">select brand</option>
+                 <option value="Mamaearth">Mamaearth</option>
+                 <option value="Nivea">Nivea</option>
+                 <option value="Olay">Olay</option>
+                 <option value="Pond's">Pond's</option>
+                 <option value="Vlcc">Vlcc</option>
+                 <option value="Beeone">Beeone</option>
+                 <option value="Bioderma">Bioderma</option>
+                 <option value="O3+">O3+</option>
+             </select>
+
+        </div>
+    <div id="btn">mamaearth</div>
+  
     </div>
+    <img id="loader" src="https://i.giphy.com/media/y1ZBcOGOOtlpC/giphy.webp" alt="" >
     <div id="container_skin"></div>
-    <div id="footer"></div>
+    
+    <div id="footer"></div>   
 </body>
 </html>
 <script type="module" src="scripts/fragrance.js"></script>
