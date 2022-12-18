@@ -16,7 +16,7 @@ const navbar=()=>{
                     <button id="btn1"><i class="fa-solid fa-heart"></i></button>
                     <button id="btn2"><i class="fa-solid fa-user"></i></button>
                     <div id="btn3_div">
-                        <button id="btn3"><p id="admin_name">My Accout</p></button>
+                        <button id="btn3"><p id="admin_name">My Account</p></button>
                         <div class="dropdown-content">
                         <button id="register_btn">Register</button>
                         <button id="login_page">Login</button>
