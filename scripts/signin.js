@@ -9,6 +9,11 @@ footer_div.innerHTML=footer();
 let data = JSON.parse(localStorage.getItem("signinData")) || [];
 // console.log(data[1].user_email);
 
+//var usr_name = document.getElementById("btn3")
+    //usr_name.innerHTML = data[i].user_fname ;
+              //  usr_name.innerHTML = "Utkarsh" ;
+
+
 var user_sign_in = document.getElementById("new");
 user_sign_in.addEventListener("click", newSign);
 function newSign(){
@@ -23,6 +28,8 @@ function newSign(){
     for(let i=0;i<n;i++){
         if(data[i].user_email === email){
             if(data[i].user_password === signin_pass){
+
+
                 localStorage.user_Name=data[i].user_fname
                 //let usr_name = document.getElementById("btn3")
                 // usr_name.innerText = data[i].user_fname ;
@@ -32,7 +39,7 @@ function newSign(){
                 return;
             }else{
                 alert("Incorrect Password");
-                return;
+                //return;
             }
         }else{
             count=0;
