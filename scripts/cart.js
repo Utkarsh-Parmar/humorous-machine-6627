@@ -68,6 +68,10 @@ document.getElementById("totalPrice").onclick=()=>{
 document.getElementById("indexLink").onclick=()=>{
   window.location.href="skin.html"
 }
+document.getElementById("proceed").onclick=()=>{
+  window.location.href="payment.html"
+
+}
 // window.onload=()=>{
 // price(cartData)
 // }

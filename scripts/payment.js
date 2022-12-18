@@ -6,6 +6,6 @@ navbar_div.innerHTML=navbar()
 let footer_div=document.getElementById("footer");
 footer_div.innerHTML=footer();
 
-document.getElementById("visa").onclick=()=>{
+document.getElementById("visa_div").onclick=()=>{
     window.location.href="card.html"
 }
