@@ -3,6 +3,17 @@
     margin: auto;
     height: 700px;
     text-align: center;
+    margin-bottom: 50px;
+}
+
+.fnt{
+    font-family: sans-serif;
+
+}
+
+.clr{
+    color: #666;
+    font-family: 14px Roboto;
 }
 
 #form-div{
@@ -46,6 +57,7 @@
 
 .lg-button {
     border: none;
+    border-radius: 10px;
     overflow: visible;
     background: #444;
     cursor: pointer;
@@ -61,3 +73,8 @@
     text-decoration: none;
     margin-top: 10px;
 }
+
+.lg-button:hover{
+    background: #6b3e85; 
+    color: #fff;
+} 
