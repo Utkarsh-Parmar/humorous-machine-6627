@@ -194,3 +194,4 @@ document.getElementById("redirect").addEventListener("click", () => {
 
     window.location.href = "skin.html"
 })
+//project complete
