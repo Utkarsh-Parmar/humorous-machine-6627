@@ -92,6 +92,7 @@ document.getElementById("updatpro").addEventListener("click", () => {
     sub.innerText = "Update Product"
     sub.addEventListener("click", () => {
         updPro()
+        
     });
 
     div1.append(h1, id1, price, sub)
@@ -106,7 +107,6 @@ document.getElementById("delepro").addEventListener("click", () => {
     let h1 = cretel("h1");
     h1.innerText = "Delete Product"
 
-
     let id1 = cretel("input");
     id1.type = "number";
     id1.placeholder = "Enter ID"
@@ -118,7 +118,8 @@ document.getElementById("delepro").addEventListener("click", () => {
         delePro()
 
     });
-    id1.value = null
+    
+    
     div1.append(h1, id1, sub)
 });
 
@@ -143,6 +144,7 @@ let addPro = async () => {
     let dat1 = await url_1.json();
 
     alert("Product Added Successfully")
+    window.location.href="Admin.html"
 }
 
 let updPro = async () => {
@@ -162,6 +164,7 @@ let updPro = async () => {
     let dat1 = await url_1.json();
 
     alert("Product Updated Successfully")
+    window.location.href="Admin.html"
 }
 
 let delePro = async () => {
@@ -177,6 +180,7 @@ let delePro = async () => {
     
 
     alert("Product Deleted Successfully")
+    window.location.href="Admin.html"
 
 }
 
