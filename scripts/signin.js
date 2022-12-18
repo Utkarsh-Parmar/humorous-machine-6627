@@ -42,8 +42,3 @@ function newSign(){
     }
 }
 
-
-
-
-// console.log()
-
