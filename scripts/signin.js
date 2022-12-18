@@ -28,15 +28,15 @@ function newSign(){
     for(let i=0;i<n;i++){
         if(data[i].user_email === email){
             if(data[i].user_password === signin_pass){
-                // console.log(data[i].user_fname);
-                let usr_name = document.getElementById("btn3")
-                let data=JSON.parse(localStorage.getItem("signinData"))
-               let newData= data[i].user_fname
-                 //usr_name.innerText = data[i].user_fname ;
-                // usr_name.innerHTML= newData
-               window.location.href="index.html";
-               usr_name.innerHTML= newData
-               // return;
+
+
+                localStorage.user_Name=data[i].user_fname
+                //let usr_name = document.getElementById("btn3")
+                // usr_name.innerText = data[i].user_fname ;
+               // usr_name.innerText = "Utkarsh" ;
+
+                window.location.replace("index.html");
+                return;
             }else{
                 alert("Incorrect Password");
                 //return;
@@ -49,9 +49,4 @@ function newSign(){
         alert("Not a User! Please Create an Accout");
     }
 }
-
-
-
-
-// console.log()
 
