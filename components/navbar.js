@@ -16,11 +16,11 @@ const navbar=()=>{
                     <button id="btn1"><i class="fa-solid fa-heart"></i></button>
                     <button id="btn2"><i class="fa-solid fa-user"></i></button>
                     <div id="btn3_div">
-                        <button id="btn3">My Account</button>
+                        <button id="btn3"><p id="admin_name">My Account</p></button>
                         <div class="dropdown-content">
-                        <button>Register</button>
-                        <button>Login</button>
-                        <button>Admin Login</button>
+                        <button id="register_btn">Register</button>
+                        <button id="login_page">Login</button>
+                        <button id="admin_login">Admin Login</button>
                         </div>
 
                     </div>
@@ -34,16 +34,16 @@ const navbar=()=>{
         <div id="nav_btns_Main_div">
             <div id="nav_btns_div">
                 <button>MAKEUP <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></button>
-                <button>SKIN <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></button>
-                <button>HAIR <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></button>
+                <button id="skin-btn">SKIN <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></button>
+                <button id="hair_btn">HAIR <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></button>
                 <button>PERSONAL CARE <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></button>
                 <button>MOM & BABY CARE <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></button>
-                <button>FRAGRANCE <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></button>
+                <button id="fragrance_btn">FRAGRANCE <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></button>
                 <button>AYURVEDA <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></button>
                 <button>BRANDS <span><i class="fa-sharp fa-solid fa-angle-down"></i></span></button>
             </div>
             <div id="my_cart">
-                <button id="my_cart_btn"><i class="fa-sharp fa-solid fa-bag-shopping"></i> MY CART </button><span><p>0.00</p></span>
+                <button id="my_cart_btn"><i class="fa-sharp fa-solid fa-bag-shopping"></i> MY CART </button><span id="myCartPrice"><p>&#8377 0.00</p></span>
             </div>
         </div>
     `

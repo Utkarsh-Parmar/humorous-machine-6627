@@ -191,5 +191,6 @@ let cretel = (el) => {
 }
 
 document.getElementById("redirect").addEventListener("click", () => {
+
     window.location.href = "skin.html"
 })

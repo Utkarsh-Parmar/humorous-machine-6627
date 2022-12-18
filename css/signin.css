@@ -1,8 +1,14 @@
 #lg-abv{
     width: 90%;
     margin: auto;
+    margin-top: 45px;
     /* border: 1px solid red; */
     margin-bottom: 10px;
+}
+
+.mg-abv{
+    /* background-color: #222; */
+    padding-top: 100px;
 }
 
 #lg-abv>h1{
@@ -20,16 +26,17 @@
 
 .fbk-btn{
     /* margin: 2px; */
-    width:350px;
+    width:300px;
     cursor: pointer;
 }
 
 .ggl-btn{
     padding-top: 18px;
     /* margin: 2px; */
-    width:350px;
-    height: 45px;
+    width:300px;
+    height: 38px;
     cursor: pointer;
+    
 }
 
 #lg-form{
@@ -37,7 +44,7 @@
     margin: auto;
     display: flex;
     column-gap: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 130px;
 }
 
 #form-lhs{
@@ -45,11 +52,13 @@
     margin: auto;
     background-color: #fff;
     border: 1px solid #ddd;
+    padding-bottom: 10px;
 }
 
-form>div:nth-child(5){
+form + div{
     display: flex;
-    column-gap: 55px;
+    column-gap: 65px;
+    align-items: center;
 }
 
 hr {
@@ -84,6 +93,7 @@ hr {
     
     background-color: #fff;
     border: 1px solid #ddd;
+    padding-bottom: 10px;
     
 }
 
@@ -104,6 +114,7 @@ hr {
 
 .lg-button {
     border: none;
+    border-radius: 10px;
     overflow: visible;
     background: #444;
     cursor: pointer;
@@ -119,10 +130,10 @@ hr {
     text-decoration: none;
     margin-top: 10px;
 }
-/* button:hover{
+.lg-button:hover{
     background: #6b3e85; 
     color: #fff;
-}   */
+}  
 .clr{
     font: 14px Roboto;
     color: #666;
@@ -132,4 +143,9 @@ hr {
     font: 16px Roboto;
     color: #666;
     padding: 5px 0px; 
+}
+.anchor{
+    text-decoration: none;
+    color: #666;
+
 }

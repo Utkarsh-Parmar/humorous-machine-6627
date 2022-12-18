@@ -7,17 +7,25 @@
     margin-top: 25px;
 }
 #container_skin>div{
-    width: 100%;
+    width: 94%;
     height: 450px;
     text-align: center;
    justify-content: center;
-    margin: auto;
-    border: 1px solid gray;
+   margin: 3%;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+#container_skin>div:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: 1px solid #e20389;
 }
 #container_skin{
  display: grid;
  grid-template-columns: repeat(3,1fr);
- margin-left: 38%;
+ width: 78%;
+ margin: auto;
+ margin-bottom: 40px;
+
 
 }
 .Product_Price{
@@ -36,4 +44,59 @@ padding: 0px 20px 0px 20px;
   border-radius: 5px;
   color: white;
   background-color: palevioletred;
+}
+#sorting{
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+#btn{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 80px;
+  padding: 10px;
+
+}
+.all_btns{
+  background-color: transparent;
+  border: 1px solid gray;
+  margin: 3px;
+  border-radius: 5px;
+}
+.all_btns:hover{
+  background-color: #e20389;
+  color: white;
+}
+#select_Brand{
+  background-color: transparent;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+#select_Brand:hover{
+  background-color: #e20389;
+  color: white;
+}
+#sortlh{
+  background-color: transparent;
+  padding: 5px;
+  border: 1px solid gray;
+  margin-left: 7px;
+  border-radius: 5px;
+}
+#sorthl{
+  background-color: transparent;
+  padding: 5px;
+  border: 1px solid gray;
+  margin-left: 7px;
+  border-radius: 5px;
+}
+#sorthl:hover{
+  background-color: #e20389;
+  color: white;
+}
+#sortlh:hover{
+  background-color: #e20389;
+  color: white;
 }

@@ -5,6 +5,7 @@ navbar_div.innerHTML=navbar()
 
 let footer_div=document.getElementById("footer");
 footer_div.innerHTML=footer();
+
 //indexpage btn link
 let index_btn=document.getElementById('logo');
 index_btn.onclick=()=>{
@@ -52,47 +53,32 @@ frag_page.onclick=()=>{
     window.location.href="fragrance.html"
 }
 
-let data = JSON.parse(localStorage.getItem("signinData")) || [];
-// console.log(data[1].user_email);
-
-//var usr_name = document.getElementById("btn3")
-    //usr_name.innerHTML = data[i].user_fname ;
-              //  usr_name.innerHTML = "Utkarsh" ;
-
-
-var user_sign_in = document.getElementById("new");
-user_sign_in.addEventListener("click", newSign);
-function newSign(){
-
-
-    console.log("I m clicked");
-    
-    let email = document.getElementById("user-email-in").value;
-    let signin_pass = document.getElementById("user-password-in").value;
-    let count =0;
-    let n = data.length;
-    for(let i=0;i<n;i++){
-        if(data[i].user_email === email){
-            if(data[i].user_password === signin_pass){
-
-
-                localStorage.user_Name=data[i].user_fname
-                //let usr_name = document.getElementById("btn3")
-                // usr_name.innerText = data[i].user_fname ;
-               // usr_name.innerText = "Utkarsh" ;
-
-                window.location.replace("index.html");
-                return;
-            }else{
-                alert("Incorrect Password");
-                //return;
-            }
-        }else{
-            count=0;
-        }
-    }
-    if(count ===0){
-        alert("Not a User! Please Create an Accout");
+document.getElementById("confirm_Order").onclick=()=>{
+    let cardnumber=document.getElementById("cardnumber").value;
+let cardHolder=document.getElementById("holder").value;
+let month=document.getElementById("month").value;
+let cvv=document.getElementById("CVV").value;
+let year=document.getElementById("year").value;
+    console.log(cardnumber.length,cardnumber)
+    if(cardnumber.length==16 && cvv.length==3&& cardHolder!==""&&month!==""&&year!==""){
+         alert("congratulations! Your order is placed")
+         localStorage.removeItem("cart_data")
+        window.location.href="index.html"
+    }else{
+        alert("check card details")
     }
 }
-
+if(localStorage.user_Name!=undefined){
+let user_name=document.getElementById("btn3")
+user_name.innerText=localStorage.user_Name
+}
+let cartData=JSON.parse(localStorage.getItem("cart_data"))||[]
+let Price=0
+function price(data){
+    data.forEach(function(el){
+        Price=Price+el.price
+        console.log(Price)   
+         document.getElementById("myCartPrice").innerHTML="&#8377  "+Price
+    })
+}
+price(cartData)
