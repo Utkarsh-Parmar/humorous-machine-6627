@@ -6,6 +6,11 @@ navbar_div.innerHTML = navbar()
 let footer_div = document.getElementById("footer");
 footer_div.innerHTML = footer();
 
+//makeup btn link
+let makeup_btn=document.getElementById('makeup_btn');
+makeup_btn.onclick=()=>{
+    window.location.href="skin.html"
+}
 //indexpage btn link
 let index_btn=document.getElementById('logo');
 index_btn.onclick=()=>{
@@ -25,7 +30,7 @@ sign_in.onclick=()=>{
 //admin login
 let admin_log=document.getElementById("admin_login")
 admin_log.onclick=()=>{
-    window.location.href="admin.html"
+    window.location.href="adminlogin.html"
 }
 // linking the cart page
 let cart_btn=document.getElementById("my_cart_btn");
@@ -189,6 +194,7 @@ let addPro = async () => {
     let dat1 = await url_1.json();
 
     alert("Product Added Successfully")
+    window.location.href="Admin.html"
 }
 
 let updPro = async () => {
@@ -208,6 +214,7 @@ let updPro = async () => {
     let dat1 = await url_1.json();
 
     alert("Product Updated Successfully")
+    window.location.href="Admin.html"
 }
 
 let delePro = async () => {
@@ -223,7 +230,7 @@ let delePro = async () => {
     
 
     alert("Product Deleted Successfully")
-    window.location.href="index.html"
+    window.location.href="Admin.html"
 
 }
 
