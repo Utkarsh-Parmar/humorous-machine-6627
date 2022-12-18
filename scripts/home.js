@@ -96,3 +96,6 @@ parenContainer.addEventListener('click',event=>{
     currentText.classList.toggle('read-more-text--show');
     current.textContent=current.textContent.includes('Read More') ? "Read Less..." : "Read More...";
 })
+
+let user_name=document.getElementById("btn3")
+user_name.innerText=localStorage.user_Name

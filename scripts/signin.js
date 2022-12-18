@@ -23,11 +23,12 @@ function newSign(){
     for(let i=0;i<n;i++){
         if(data[i].user_email === email){
             if(data[i].user_password === signin_pass){
-                let usr_name = document.getElementById("btn3")
+                localStorage.user_Name=data[i].user_fname
+                //let usr_name = document.getElementById("btn3")
                 // usr_name.innerText = data[i].user_fname ;
-                usr_name.innerText = "Utkarsh" ;
+               // usr_name.innerText = "Utkarsh" ;
 
-                window.location.replace("home.html");
+                window.location.replace("index.html");
                 return;
             }else{
                 alert("Incorrect Password");

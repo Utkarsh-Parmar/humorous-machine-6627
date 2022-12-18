@@ -22,3 +22,5 @@ let year=document.getElementById("year").value;
         alert("check card details")
     }
 }
+let user_name=document.getElementById("btn3")
+user_name.innerText=localStorage.user_Name

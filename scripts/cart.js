@@ -75,3 +75,5 @@ document.getElementById("proceed").onclick=()=>{
 // window.onload=()=>{
 // price(cartData)
 // }
+let user_name=document.getElementById("btn3")
+user_name.innerText=localStorage.user_Name

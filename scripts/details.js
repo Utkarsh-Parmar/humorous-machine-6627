@@ -67,3 +67,5 @@ let renderDom=(data)=>{
   }
 
 delete localStorage.Data_id;
+let user_name=document.getElementById("btn3")
+user_name.innerText=localStorage.user_Name
