@@ -62,6 +62,17 @@ padding: 0px 20px 0px 20px;
   border: 1px solid #DD0285;
 
 }
+#proceed{
+margin-left: 87%;
+margin-bottom: 10px;
+padding: 10px;
+background-color: #e20389;
+border: 1px solid #e20389;
+color: white;
+}
+#proceed:hover{
+  font-size: 14px;
+}
 
 /* #price{
 

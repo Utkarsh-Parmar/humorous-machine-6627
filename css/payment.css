@@ -67,3 +67,22 @@
 #main>#payment_Offer>div>p{
     font-size: 11px;
 }
+#shipping_details{
+    width: 70%;
+    margin: auto;
+}
+#shipping_details input{ 
+   width: 80%;
+   height: 30px;
+   border-radius: 8px;
+}
+#shipping_details h3{
+   font-size: 25px;
+   margin:40px 50px 50px 0px;
+}
+#state{
+    width: 20%;
+    height: 30px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}

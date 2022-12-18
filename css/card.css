@@ -20,7 +20,7 @@
 #details{
     width: 80%;
     display: flex;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 #left-details{
     width: 42%;
@@ -52,3 +52,18 @@ input,select{
         font-size: 10px;
       color: rgb(123,125,124);
 }
+#confirm_Order{
+   margin-left: 88%;
+   margin-right: 2%;
+   margin-top: -40px;
+   padding: 20px;
+   font-size: 20px;
+   border-radius: 10px;
+   background-color:transparent;
+   border: 1px solid gray;
+   margin-bottom: 30px;
+}
+#confirm_Order:hover{
+    background-color: #e20389;
+    color: white;
+ }

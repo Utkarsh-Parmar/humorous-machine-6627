@@ -35,8 +35,9 @@
     text-decoration: underline;
 }
 #footer_main_container>div :hover{
-    text-decoration: underline;
-    color: #DD0285;
+    /* text-decoration: underline; */
+    font-size: 18px;
+    color: #e20389;
     
 }
 .newsletter-footer{

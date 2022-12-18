@@ -17,7 +17,7 @@ let year=document.getElementById("year").value;
     console.log(cardnumber.length,cardnumber)
     if(cardnumber.length==16 && cvv.length==3&& cardHolder!==""&&month!==""&&year!==""){
          alert("congratulations! Your order is placed")
-        window.location.href="home.html"
+        window.location.href="index.html"
     }else{
         alert("check card details")
     }
