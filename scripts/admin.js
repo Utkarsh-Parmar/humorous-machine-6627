@@ -133,7 +133,7 @@ let addPro = async () => {
         price: +price.value,
         image: image.value,
     }
-    let url_1 = await fetch(`https://js211-project.onrender.com/hair`, {
+    let url_1 = await fetch(`https://js211-project.onrender.com/skin`, {
         method: "POST",
         body: JSON.stringify(obj),
         headers: {
@@ -152,7 +152,7 @@ let updPro = async () => {
         
         price: +price.value,
     }
-    let url_1 = await fetch(`https://js211-project.onrender.com/hair/${id1}`, {
+    let url_1 = await fetch(`https://js211-project.onrender.com/skin/${id1}`, {
         method: "PATCH",
         body: JSON.stringify(obj),
         headers: {
@@ -167,7 +167,7 @@ let updPro = async () => {
 let delePro = async () => {
     let id1 = document.getElementById("id_pro").value
 
-    let url_1 = await fetch(`https://js211-project.onrender.com/hair/${id1}`, {
+    let url_1 = await fetch(`https://js211-project.onrender.com/skin/${id1}`, {
         method: "DELETE",
         headers: {
             "Content-type": "application/json "
@@ -177,6 +177,7 @@ let delePro = async () => {
     
 
     alert("Product Deleted Successfully")
+    window.location.href="index.html"
 
 }
 
