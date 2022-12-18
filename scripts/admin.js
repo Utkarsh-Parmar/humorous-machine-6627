@@ -144,7 +144,7 @@ let addPro = async () => {
     let dat1 = await url_1.json();
 
     alert("Product Added Successfully")
-    window.location.href="Admin.html"
+    
 }
 
 let updPro = async () => {
@@ -164,7 +164,7 @@ let updPro = async () => {
     let dat1 = await url_1.json();
 
     alert("Product Updated Successfully")
-    window.location.href="Admin.html"
+    
 }
 
 let delePro = async () => {
@@ -180,7 +180,7 @@ let delePro = async () => {
     
 
     alert("Product Deleted Successfully")
-    window.location.href="Admin.html"
+   
 
 }
 
@@ -195,3 +195,4 @@ document.getElementById("redirect").addEventListener("click", () => {
     window.location.href = "skin.html"
 })
 //project complete
+//igsd;fd9;osdgs
