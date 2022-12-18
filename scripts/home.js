@@ -6,12 +6,12 @@ navbar_div.innerHTML=navbar()
 let footer_div=document.getElementById("footer");
 footer_div.innerHTML=footer();
 
-//makeup
+
 let makeup_btn=document.getElementById('makeup_btn');
 makeup_btn.onclick=()=>{
     window.location.href="skin.html"
 }
-//indexpage btn link
+
 let skin_btn=document.getElementById('logo');
 skin_btn.onclick=()=>{
     window.location.href="skin.html"
@@ -36,7 +36,7 @@ sign_in.onclick=()=>{
 //admin login
 let admin_log=document.getElementById("admin_login")
 admin_log.onclick=()=>{
-    window.location.href="admin.html"
+    window.location.href="adminlogin.html"
 }
 // linking the cart page
 let cart_btn=document.getElementById("my_cart_btn");
