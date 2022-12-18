@@ -53,7 +53,7 @@ frag_page.onclick=()=>{
 }
 let url="https://js211-project.onrender.com/skin"
 let product=async(pageNo=1)=>{
-     let res=await fetch(`${url}?_limit=9&_page=${pageNo}`)
+     let res=await fetch(`${url}?_limit=12&_page=${pageNo}`)
     res= await res.json()
    renderDom(res)
    console.log(res)
@@ -97,7 +97,7 @@ let sortlh=document.getElementById("sortlh").onclick=()=>{
   low(1)
 }
 let low=async(pageNo)=>{
-let res=await fetch(`${url}?_limit=9&_page=${pageNo}`)
+let res=await fetch(`${url}?_limit=12&_page=${pageNo}`)
  let data= await res.json()
  data.sort(function(a,b){
   return a.price-b.price
@@ -110,7 +110,7 @@ let sorthl=document.getElementById("sorthl").onclick=()=>{
   high(1)
 }
 let high=async(pageNo)=>{
-  let res=await fetch(`${url}?_limit=9&_page=${pageNo}`)
+  let res=await fetch(`${url}?_limit=12&_page=${pageNo}`)
   let  data= await res.json()
   data.sort(function(a,b){
     return b.price-a.price
